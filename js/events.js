@@ -17,6 +17,14 @@ function submitIt(){
   })
 }
 
+function pressIt(){
+  $('input').on('keydown',function(key){
+    if(key.which === 103){
+      alert('You pressed g');
+    }
+  })
+}
+
 $(document).ready(function(){
 
 // call functions here
